@@ -1,0 +1,32 @@
+<div class="col-md-4 mx-auto">
+  <div class="card">
+    <div class="card-header text-center">
+      <h3>Nuevo Despliegue</h3>
+      <img src="/img/kubernetes.png" class="rounded-circle mx-auto d-block m-3 logo2" alt="LogoKubernetes">
+    </div>
+    <div class="card-body">
+      <form action="/deployments/newDeployment" method="post">
+        <div class="form-group">
+          <label>Despliegue:</label>
+          <input type="text" name="name" class="form-control" placeholder="Nombre del despliegue" autofocus>
+        </div>
+        <div class="form-group">
+          <label>Tipo:</label>
+          <select name="type" class="form-control">
+            <option value="RedesNeuronales">RedesNeuronales</option>
+            <option value="TecnologiaDeComputadores">TecnologiaDeComputadores</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Replicas:</label>
+          <input type="number" class="form-control" name="replicas" value="1" min="1">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">
+            Guardar
+          </button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
